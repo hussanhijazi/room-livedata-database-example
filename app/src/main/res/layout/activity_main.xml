@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.hussan.roomdatabase.MainActivity">
+
+    <EditText
+        android:id="@+id/et_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:hint="type a product..." />
+
+    <Button
+        android:id="@+id/bt_insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/list_item_product" />
+
+
+</LinearLayout>
